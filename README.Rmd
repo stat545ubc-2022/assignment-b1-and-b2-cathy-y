@@ -1,19 +1,28 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # cathystat545
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of cathystat545 is to calculate the frequency of each level in
-a factor-type column of a data frame and report the most frequently
-occurring level.
+The goal of cathystat545 is to calculate the frequency of each level in a factor-type column of a data frame and report the most frequently occurring level.
 
 ## Installation
 
-You can install the development version of cathystat545 from
-[GitHub](https://github.com/) with:
+You can install the development version of cathystat545 from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -24,7 +33,7 @@ devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-cathy-y")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
+```{r example}
 # library(cathystat545)
 # 
 # sample_df <- data.frame("cake" = c("red velvet", "red velvet", "vanilla", "chocolate", "red velvet", "red velvet"),
@@ -34,3 +43,4 @@ This is a basic example which shows you how to solve a common problem:
 # 
 # most_frequent(sample_df, "cake")
 ```
+

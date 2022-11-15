@@ -1,0 +1,16 @@
+Package: cathystat545
+Title: Most frequently occurring item
+Version: 0.1.0
+Authors@R: 
+    person("Cathy", "Yan", , "cathyyan_ca@hotmail.com", role = c("aut", "cre"))
+Description: Contains a function that reports the most frequently occurring level of a factor-type column in a dataframe. It does this by first calculating the frequency of each level. Then, it determines the maximum frequency and returns the level(s) corresponding to it.
+Depends: dplyr
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    magrittr
