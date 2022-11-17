@@ -34,13 +34,13 @@ devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-cathy-y")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-# library(cathystat545)
-# 
-# sample_df <- data.frame("cake" = c("red velvet", "red velvet", "vanilla", "chocolate", "red velvet", "red velvet"),
-#                         "client" = c("client 1", "client 1", "client 2", "client 2", "client 3", "client 3"),
-#                         "cost" = c(12, 12, 14.50, 10.25, 12, 12))
-# sample_df$cake <- as.factor(sample_df$cake)
-# 
-# most_frequent(sample_df, "cake")
+library(cathystat545)
+
+sample_df <- data.frame("cake" = c("red velvet", "red velvet", "vanilla", "chocolate", "red velvet", "red velvet"),
+                        "client" = c("client 1", "client 1", "client 2", "client 2", "client 3", "client 3"),
+                        "cost" = c(12, 12, 14.50, 10.25, 12, 12))
+sample_df$cake <- as.factor(sample_df$cake)
+
+most_frequent(sample_df, "cake")
 ```
 
